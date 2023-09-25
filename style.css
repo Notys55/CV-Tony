@@ -1,0 +1,325 @@
+/*police*/
+@font-face {
+    font-family: 'Aileron-Thin';
+    src: url('Aileron-Thin.otf');
+}
+@font-face {
+    font-family: 'Aileron-Regular';
+    src: url('Aileron-Regular.otf');
+}
+@font-face {
+    font-family: 'Gruppo';
+    src: url('Gruppo\ 400.ttf');
+}
+/*lien mail*/
+style
+a:link {color:#f8bf45;}              /* Lien non visité */
+a:visited {color:#ffffff;}          /* Lien visité */
+a:hover {color:#ff00c8;}            /* Lien survolé*/
+a:active {color:#3f3f3f;}           /* Lien sélectionné */
+
+
+/*image de fond*/
+body
+{
+    background-color:black ;
+    width: auto;
+}
+
+/*mes titres */
+
+h1
+{
+    margin-top: -15px;
+    width: auto;
+    text-align: center;
+    font-size: 85px;
+    margin-bottom: -22px;
+    background: linear-gradient(0deg,#ffffff 20%,#ffbb00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Arial black';
+}
+
+h2
+{
+    margin-top: 1px;
+    padding-top: 15px;
+    margin-bottom: -30px;
+    text-align: LEFT;
+    background-color: black;
+    color: white;
+    padding-left:60px;
+    font-family: 'Gruppo';
+    font-size: 60px;
+}
+
+h3
+{
+    color:black;
+    border-bottom: 5px solid #ffde59;
+    text-align:left;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family: 'Aileron-Regular';
+    padding-bottom: 13px;
+    font-size: 25px;
+}
+
+h4
+{
+    color: black;
+    padding-left: 15px;
+    border:1px solid black;
+    background: url("Bande2.png") center;
+    height: 25px;
+    line-height: 25px;
+    font-family: 'Aileron-Regular';
+}
+
+#info_perso
+{
+color: white;
+width: auto;
+}
+
+#Atouts
+{
+color: white;
+width: auto;
+}
+
+#Langues
+{
+color: white;
+width: auto;
+}
+
+#Loisirs
+{
+color: white;
+width: auto;
+}
+
+/*mon texte*/
+li
+{
+    
+    text-align: left;
+    margin-right: 30px;
+    font-family: 'Aileron-Thin';
+    line-height: 190%;
+}
+
+ol
+{
+    list-style: none;
+    padding-left: 20px;
+    font-family: 'Aileron-Thin';
+}
+
+#allcontenu
+{
+    display: flex;
+    margin: auto;
+    width:1000px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+#contenu
+{
+    width: 100%;
+}
+
+p
+{
+    color: transparent;
+    width: 0px;
+    height: 0px;
+}
+
+/*mon liseret la partie gauche*/
+#liseret
+{  
+    width: 350px;
+    background-color: #a6a6a6;
+    list-style: none;
+    margin:10px;
+}
+
+#triangle
+{
+    border-top : 200px solid BLACK;
+    border-right : 285px solid transparent;
+    position:absolute
+}
+
+#triangle2
+{
+    border-top : 205px solid white;
+    border-right : 290px solid transparent;
+}
+
+#rectangle
+{
+    border-top : 100px solid BLACK;
+}
+
+#titre
+{
+    position: absolute;
+    font-weight: bolder;
+
+}
+
+#descriptiontitre
+{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+/*responsive*/
+@media screen and (max-width: 1024px) {
+    /* CSS appliqué aux TABLETTES */
+    
+    #allcontenu
+    {
+        width:720px ;    
+    }
+
+    /*mes titres*/
+    h1
+    {
+        width: auto;
+        font-size: 60px;
+        margin-bottom: -20px;
+        margin-top: -20px;    
+    }
+
+    h2
+    {
+        margin-top: 1px;
+        padding-top: 10px;
+        margin-bottom: -30px;
+        padding-left:30px;
+        font-size: 40px;
+    }
+
+    /*mon liseret*/
+    #rectangle
+    {
+        border-top : 50px solid BLACK;
+    }
+
+    #liseret
+    {
+        width: 230px;
+    }
+
+    #triangle
+    {
+        border-top : 90px solid BLACK;
+        border-right : 225px solid transparent;
+    }
+
+    #triangle2
+    {
+        border-top : 95px solid white;
+        border-right : 235px solid transparent;
+    }
+
+    /*mon texte*/
+    li
+    {
+        line-height: 140%;
+    }
+
+    p
+    {
+        color: transparent;
+        width: 0px;
+        height: 0px;
+    }
+ }
+
+ /*responsive*/
+@media screen and (max-width: 600px) {
+    /* CSS appliqué aux SMARTPHONES */
+    
+    #allcontenu
+    {
+        width:auto ;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1px;
+    }
+
+    /*mes titres*/
+    h1
+    {
+        width: auto;
+        font-size: 28px;
+        margin-bottom: -9px;
+        margin-top: -10px;      
+    }
+
+    h2
+    {
+        display: none;
+    }
+
+    h3
+    {
+        font-size: 15px;
+    }
+
+    #contenu
+    {
+        order: 1;
+    }
+    #liseret
+    {
+        width: auto;
+        order: 2;
+    }
+    #triangle
+    {
+        display: none;
+    }
+
+    #triangle2
+    {
+        display: none;
+    }
+    #rectangle
+    {
+        display: none;
+    }
+
+    p
+    {
+        padding:5px;
+        text-align: center;
+        margin: 11px;
+        background-color: black;
+        color: white;
+        font-family: 'Gruppo';
+        font-size: 20px;
+        width: auto;
+        height: 20px;
+    }
+
+    #titre
+    {
+        margin-top: -7px;
+        font-size: 10px;
+    }
+    
+    #descriptiontitre
+    {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
