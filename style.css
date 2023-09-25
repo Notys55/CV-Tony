@@ -323,3 +323,32 @@ p
         margin-top: 10px;
     }
 }
+@media print{
+    body 
+    {
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #REFERENTDIGITAL
+    {
+        display: none;
+    }
+    #rectangle
+    {
+        display: none;
+    }
+    #triangle
+    {
+        display: none;
+    }
+    #triangle2
+    {
+        display: none;
+    }
+    h2
+    {
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+}
